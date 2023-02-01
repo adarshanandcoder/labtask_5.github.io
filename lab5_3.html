@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <button id="incrementbutton">Increment</button>
+    <ul id="numberlist"></ul>
+    <script>
+      const incrementbutton = document.getElementById("incrementbutton");
+      const numberlist = document.getElementById("numberlist");
+      let countValue = 0;
+      
+      incrementbutton.addEventListener("click", function() {
+        countValue++;
+        const listItem = document.createElement("li");
+        listItem.innerHTML = countValue;
+        numberlist.appendChild(listItem);
+      });
+    </script>
+  </body>
+</html>
